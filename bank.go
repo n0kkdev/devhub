@@ -4,11 +4,13 @@ import "fmt"
 
 func main() {
 	const course float32 = 65.05
-	var r float32
+	var m float32
+	var p float32
 	fmt.Println("Сколько рублей?")
-	fmt.Scanln(&r)
-	var d float32
-	d = r / course
-	fmt.Printf("%.2f", d)
-	fmt.Println(" Долларов")
+	fmt.Scanln(&m)
+	fmt.Println("Kaкой процент?")
+	fmt.Scanln(&p)
+	a := (p / 100 * m) + m*5
+	fmt.Println("За 5 лет накопление составит", a)
+
 }
