@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var m float32
-	var p float32
+	var m,p float32
 	fmt.Println("Сколько рублей?")
 	fmt.Scanln(&m)
 	fmt.Println("Kaкой процент?")
