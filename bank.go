@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	const course float32 = 65.05
 	var m float32
 	var p float32
 	fmt.Println("Сколько рублей?")
