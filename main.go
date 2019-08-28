@@ -39,7 +39,15 @@ func main() {
 	var ac = (string(c))
 	fmt.Println(strings.EqualFold(ab, ac))
 	var as = strings.Join([]string{ab, ac}, "")
-	fmt.Println(strings.ToUpper(as))
+	as = (strings.ToUpper(as))
+
+	file, err := os.Create("struct.txt")
+	if err != nil {
+		return
+	}
+	defer file.Close()
+	file.WriteString(as)
+
 
 	if len(c) > len(b) {
 		fmt.Println("длина car2 больше trunk")
